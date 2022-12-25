@@ -1,0 +1,148 @@
+.logo-image {
+  width: 30px;
+  height: 47px;
+  margin-bottom: -15px;
+}
+
+.logo-title {
+  color: #ffffff;
+  font-family: "Avenir Next Rounded Std - Demi";
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+
+.logo-title::after {
+content: '';
+display: block;
+width: 38px;
+height: 3px;
+padding-top: -10px;
+background-color: #a2ca28;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-left {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  z-index: 1;
+}
+
+.section-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 670px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-bottom {
+width: 100%;
+position: absolute;
+bottom:0;
+}
+
+.section-header {
+  background-image: url(../../images/hero.png);
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+@media (min-width:680px) {
+  .section-header {
+      background-image: url(../../images/hero.png);
+      background-size: cover;
+   width: auto;  
+}
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+  
+.logo > * {
+  padding: 0 10px;
+}
+
+.hero-title {
+  font-family: "Open Sans";
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 40px;
+
+}
+
+.hero-title-symbol {
+  color: #a2ca28;
+}
+
+.hero-subtitle {
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: -20px;
+  padding-left: 180px;
+}
+
+.hero-subtitle-symbol {
+  color: #fd634e;
+}
+
+@media (min-width: 1200px) {
+  .hero-title {
+      font-family: "Open Sans";
+      font-weight: 100;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-size: 40px;
+  }
+
+  .hero-subtitle {
+      font-size: 15px;
+      letter-spacing: 3px;
+      font-weight: 100;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-top: -20px;
+      padding-left: 180px;
+  }
+}    

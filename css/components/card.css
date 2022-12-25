@@ -1,0 +1,109 @@
+
+.card-title {
+    font-weight: 400;
+    color: #ffff;
+    font-family: "Open Sans";
+    font-size: 24px;
+    line-height: 54.17px;
+    text-align: center;
+}
+
+.card-description {
+    font-size: 14px;
+    font-family: "Proxima Nova";
+    line-height: 24px;
+    color: #ffff;
+  font-weight: 400;
+  text-align: start;
+}
+
+.card-content {
+    margin: 20px 0;
+  text-align: start;
+}
+
+.card-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.card-image {
+    position: relative;
+    font-size: 80px;
+    margin: 0 auto;
+}
+
+.section-card {
+    color: aliceblue;
+    margin: 20px 0;
+}
+
+.card-text {
+    color: #8297a7;
+    font-family: "Proxima Nova";
+ 
+}
+@media(min-width:320px) {
+
+    .card-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .card-text {
+        -ms-flex-preferred-size: 70%;
+            flex-basis: 70%;
+        padding: 0 20px;
+    }
+
+    .card-title,
+    .card-description {
+        margin: 0;
+        text-align: left;
+        
+    }
+}
+
+@media(min-width:1200px) {
+
+    .card-image {
+        margin: 0;
+    }
+    .card-title {
+        font-size: 20px;
+        text-align: center;
+    }
+    .card-description {
+        font-size: 14px;
+        text-align: start;
+        line-height: 23.98px;
+    }
+    .card-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .card .container {
+        width: auto;
+    }
+
+    .section-card {
+        font-size: 12px;
+    }
+}

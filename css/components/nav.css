@@ -1,0 +1,149 @@
+.nav {
+  position: relative;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -12.5px;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  font-family: "Avenir Next Rounded Std - Med";
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+.nav-menu,
+.nav-menu-mobile {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav-menu {
+  display: none;
+  letter-spacing: 0.2px;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 15px;
+}
+
+.nav-menu li {
+  padding: 0 20px;
+}
+
+.nav-menu li a{
+  font-size: 13px;  
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-toggle {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #fd634e;
+  border-radius: 10%;
+}
+
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  height: 7px;
+  width: 37px;
+  background-color: #ffffff;
+  margin-left: -19px;
+  margin-top: -4px;
+}
+
+.nav-toggle span::before,
+.nav-toggle span::after {
+  content: "";
+  display: block;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-toggle span::before {
+  -webkit-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+.nav-toggle span::after {
+  -webkit-transform: translateY(15px);
+      -ms-transform: translateY(15px);
+          transform: translateY(15px);
+}
+
+
+.nav-menu li a:hover {
+  border-bottom: 3px solid #fd634e;
+}
+
+.nav-menu li a {
+  padding: 22px 0;
+}
+
+.nav-menu-mobile {
+  display: none;
+  position: absolute;
+  background: #fd634e;
+  width: 150px;
+}
+
+.nav-menu-mobile li a {
+  color: white;
+  display: inline-block;
+  padding: 10px;  
+}
+
+.nav-menu-mobile a:hover {
+  text-decoration: underline;
+}
+
+.nav.is-active .nav-menu-mobile{
+  display: block;
+  margin-top: 60px;
+  margin-left: -70px;
+}
+
+.nav.is-active span {
+  height: 0;
+}
+
+.nav.is-active span::before {
+  -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.nav.is-active span::after {
+  -webkit-transform: rotate(-40deg);
+      -ms-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+
+@media (min-width:1200px) {
+  .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-menu-mobile {
+    display: none;
+  } 
+}

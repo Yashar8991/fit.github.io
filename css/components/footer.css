@@ -1,0 +1,47 @@
+.section-footer  {
+    background-color: #0d1119;
+    color: #8297a7;
+    min-height: 600px;
+    padding: 50px 50px;
+    margin: 0;
+}
+
+.footer-title {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 12px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.footer-description {
+    font-size: 14px;
+    color: #8297a7;
+    line-height: 24px;
+
+}
+
+@media (min-width:320px) and (max-width:980px) {
+    .footer-title {
+        font-size: 20px;
+        text-align: center;
+    }
+    .footer-description {
+        font-size: 14px;
+        text-align: start;
+        line-height: 23.98px;
+    }
+    .section-footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .width-1-1-sm {
+        width:100%;
+    }
+}

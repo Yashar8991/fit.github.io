@@ -1,0 +1,180 @@
+
+.form-control {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input,
+.select,
+.input-textarea {
+  height: 45px;
+  border: 0 none;
+  padding: 0 20px;
+  background: #fff;
+  color: #666;
+  border: 1px solid #e5e5e5;
+  margin: 0;
+  border-radius: 0;
+  font-size: 14px;
+  position: relative;
+}
+
+.input:focus,
+.select:focus,
+.input-textarea:focus {
+  outline: none;
+  background-color: #fff;
+  color: #666;
+  border-color: #1e87f0;
+}
+
+.input:disabled,
+.select:disabled,
+.input-textarea:disabled {
+  background-color: #f8f8f8;
+  color: #999;
+  border-color: #e5e5e5;
+}
+
+.input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.input::-moz-placeholder {
+  color: #999;
+}
+
+.input:-ms-input-placeholder {
+  color: #999;
+}
+
+.input::-ms-input-placeholder {
+  color: #999;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.input-textarea::-webkit-input-placeholder {
+  color: #999;
+}
+
+.input-textarea::-moz-placeholder {
+  color: #999;
+}
+
+.input-textarea:-ms-input-placeholder {
+  color: #999;
+}
+
+.input-textarea::-ms-input-placeholder {
+  color: #999;
+}
+
+.input-textarea::placeholder {
+  color: #999;
+}
+
+.form-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #999;
+}
+
+.form-icon:hover {
+  color: #666;
+}
+
+.form-icon:not(.form-icon-flip)~.input {
+  padding-left: 40px !important;
+}
+
+.form-icon-flip {
+  right: 0;
+  left: auto;
+}
+
+.form-icon-flip~.input {
+  padding-right: 40px !important
+}
+
+ .form-danger,
+ .form-danger:focus {
+   color: #f0506e;
+   border-color: #f0506e;
+ }
+
+ .form-success,
+ .form-success:focus {
+   color: #32d296;
+   border-color: #32d296;
+ }
+ 
+ button, input {
+   overflow: visible;
+ }
+
+ .form-control > .input, .input-textarea {
+  margin-bottom: 20px;
+ }
+
+ .input-textarea {
+  height: 200px;
+  resize: none;
+  padding: 20px;
+ }
+
+ .input-secondary {
+  background-color: #fff;
+}
+
+.button-secondary {
+  width: 182px;
+  height: 45px;
+  background-color: #a2ca28;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  -o-border-image: initial;
+     border-image: initial;
+  padding: 0px;
+}
+
+.button-icon {
+  font-size: 11px;
+  color: #fff;
+}
+
+.buttom-place {
+  color: #fff;
+
+  padding-right: 5px;
+}
+
+@media(min-width:320px) and (max-width:980px) {
+  .input-secondary, .button-secondary {
+    width:100%;
+  }
+}
